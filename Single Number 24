@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int N, i, single = 0;
+    scanf("%d", &N);
+    int nums[N];
+    for (i = 0; i < N; i++) {
+        scanf("%d", &nums[i]);
+        single ^= nums[i];
+    }
+    printf("%d\n", single);
+    return 0;
+}
