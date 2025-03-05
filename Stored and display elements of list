@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ int N;
+
+    printf("Enter the number of elements: ");
+    scanf("%d", &N);
+
+    int elements[N]; 
+
+    
+    printf("Enter the elements separated by space: ");
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &elements[i]);
+    }
+
+  
+    for (int i = 0; i < N; i++) {
+        printf("%d", elements[i]);
+        if (i < N - 1) {
+            printf(" "); 
+        }
+    }
+    printf("\n");
+        
+    return 0;
+}
